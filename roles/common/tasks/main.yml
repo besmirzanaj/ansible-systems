@@ -21,4 +21,4 @@
   service: name=ntpd state=started enabled=yes
   tags: ntp
 
-include: install-packages.yml
+- include: install-packages.yml

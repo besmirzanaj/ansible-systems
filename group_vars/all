@@ -3,4 +3,4 @@
 
 httpd_port: 80
 ntpserver: ca.pool.ntp.org
-repository: git@github.com:besmirzanaj/sample-web-page.git
+repository: https://github.com/besmirzanaj/sample-web-page.git
