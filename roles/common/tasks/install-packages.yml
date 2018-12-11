@@ -1,0 +1,10 @@
+# Common package installation
+- name: Install common packages
+  yum: name={{ item }} state=installed
+  with_items:
+   - htop
+   - nano
+   - vim
+   - sysstat
+   - fail2ban
+
