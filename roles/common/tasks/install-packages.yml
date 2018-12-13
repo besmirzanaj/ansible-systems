@@ -3,7 +3,9 @@
   yum: 
     name:
       - htop
+      - wget
       - nano
+      - dstat
       - vim
       - sysstat
       - fail2ban
