@@ -3,3 +3,6 @@ vps1.cloudalbania.com
 
 [dbservers]
 vps2.cloudalbania.com
+
+[gitlab_runner]
+vps3.cloudalbania.com
