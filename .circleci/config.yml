@@ -1,0 +1,4 @@
+jobs:
+  deploy:
+    steps:
+      - run: ansible-playbook -i hosts site.yml
