@@ -12,15 +12,22 @@ RHEL7 version reflects changes in Red Hat Enterprise Linux and CentOS 7:
 
 This LAMP stack can be on a single node or multiple nodes. The inventory file 'hosts' defines the nodes in which the stacks should be configured. Instead of hostnames you can just place an IP address
 
-        [webservers]
-        your.web.server
+On all your servers make sure to copy the ssh key on all of them so you have ssh-key authentication:
+   
+    ssh-copy-id root@your.web.server
+    ssh-copy-id root@your.db.server
+   
+The content of your hosts file would be like this:
 
-        [dbservers]
-        your.db.server
+    [webservers]
+    your.web.server
+
+    [dbservers]
+    your.db.server
 
 The stack can be deployed using the following command:
 
-        ansible-playbook -i hosts site.yml
+    ansible-playbook -i hosts site.yml
 
 Once done, you can check the results by browsing to http://your.web.server/index.php.
 
